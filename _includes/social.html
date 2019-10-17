@@ -1,0 +1,6 @@
+<span class="social">
+  {% for link in site.data.social %}
+  <a href="{{ link.url }}" title="{{ link.title }}" class="social__{{ link.title | downcase }}">{{ link.label }}</a>
+  {% if forloop.last != true %} &bull; {% endif %}
+  {% endfor %}
+</span>
