@@ -2,6 +2,7 @@
 ---
 
 body {
+  background: #2C1B1B;
   color: #E9DC7C;
   font-family: 'Roboto', sans-serif;
 }
@@ -28,8 +29,10 @@ a {
   align-items: center;
 }
 
+.container,
 .intro {
   padding: 40px;
+  width: 100vw;
 }
 
 .headshot {
@@ -42,4 +45,10 @@ a {
 .headshot img {
   height: auto;
   width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
 }

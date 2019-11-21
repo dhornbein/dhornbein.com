@@ -1,7 +1,4 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: home
 ---
 
@@ -9,7 +6,7 @@ layout: home
 
 I want to create a world where we work better together. Let's talk.
 
-<a href="" onclick="Calendly.showPopupWidget('https://calendly.com/dddrew/talk');return false;">Schedule time with me</a>
+<a href="" onclick="Calendly.showPopupWidget('https://calendly.com/dddrew/talk');return false;">Schedule time with me</a>. See [my Calendar here](/calendar).
 
 [{{ site.email }}](mailto:{{ site.email }})
 
