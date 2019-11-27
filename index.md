@@ -14,4 +14,4 @@ I want to create a world where we work better together. Let's talk.
 {% include social.html %}
 </p>
 
-Did I provide value to you? Give back with [Venmo (@dddrew)](https://venmo.com/dddrew) or [Paypal](https://www.paypal.me/Hornbein/30)
+Did I provide value to you? Give back with [Venmo (@dddrew)](https://venmo.com/dddrew) or [Paypal](https://www.paypal.me/dhornbein)
