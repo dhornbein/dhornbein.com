@@ -1,6 +1,7 @@
-----
+---
+layout: page
 title: Making Meetings Meaningful
-----
+---
 
 Are you having good meetings? I suspect not. Let's join forces and invest in making your meeting culture better.
 
