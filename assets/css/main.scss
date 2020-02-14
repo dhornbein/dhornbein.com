@@ -1,30 +1,62 @@
 ---
 ---
 
+$color-sky: #98c9d2;
+$color-darksky: #090c0c;
+$color-eggplant: #331b50;
+$color-pink: #ff00c7;
+$color-yellowish: #e3acff;
+
 body {
-  background: #2C1B1B;
-  color: #E9DC7C;
   font-family: 'Roboto', sans-serif;
 }
-h1,h2 {
+h1,h2,h3 {
   font-family: 'Nunito', sans-serif;
-  font-size: 30pt;
+  font-size: 2.5rem;
+  color: $color-sky;
+  font-weight: bold;
 }
 
 h1:first-child { margin-top: 0; }
 p:last-child { margin-bottom: 0; }
 
 a {
-  color: #FFF5DE;
+  color: $color-yellowish;
   &:hover {
-    color: #FFF5DE
+    color: lighten($color-yellowish, 25%);
   }
 }
 
+.btn {
+  color: $color-eggplant;
+  background-color: $color-yellowish;
+  padding: 0.5em;
+  display: inline-block;
+  border-radius: 5px;
+  cursor: pointer;
+  &:hover {
+    color: darken($color-eggplant, 25%);
+    background-color: lighten($color-yellowish, 25%);
+  }
+}
+
+main {
+  background-color: $color-eggplant;
+  color: $color-pink;
+  font-size: 1.5rem;
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+main .page {
+  padding: 1rem;
+  max-width: 65ch;
+}
+
 .wrapper {
-  background: linear-gradient(13deg, #2C1B1B 0%,#183660 100%);
+  background: $color-darksky;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
 }
