@@ -10,12 +10,12 @@ I help bring ideas to life through facilitation, technology, and art.
 
 I am a cultural poet who’s purpose is to bring the just, honest, and compassionate world we all know is possible into being by helping people collaborate better with each other and themselves.
 
-* Projects
-* Offerings
-* Open Office Hours
-* My Story
+* [Projects](#projects)
+* [Offerings](#offerings)
+* [Open Office Hours](#free-open-office-hours)
+* [My Story](#my-story)
 
-### Did I provide value to you?
+### *Did I provide value to you?*
 
 <a href="#pay" class="btn">Give Money</a>
 
