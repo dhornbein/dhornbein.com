@@ -8,7 +8,7 @@
     <title>Drew Hornbein</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/gbi0bhm.css">
     <link rel="stylesheet" href="/assets/css/main.css">
   </head>
 
@@ -22,8 +22,8 @@
     <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
     <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
     {% endunless %}
-    {% unless page.chat == false %}
+    {% if page.chat == true %}
     <script src="https://embed.small.chat/TFMP17C9LGFKNGPN57.js" async></script>
-    {% endunless %}
+    {% endif %}
   </body>
 </html>

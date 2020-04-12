@@ -2,42 +2,55 @@
 layout: home
 ---
 
-# Hello, I'm Drew Hornbein
+# Hi, I'm Drew
 
-I want to create a world where we work better together. Let's talk.
+<a class="btn" href="" onclick="Calendly.showPopupWidget('https://calendly.com/dddrew/');return false;">Schedule time with me</a>
 
-<a href="" onclick="Calendly.showPopupWidget('https://calendly.com/dddrew/talk');return false;">Schedule time with me</a>. See [my Calendar here](/calendar).
+I help bring ideas to life through facilitation, technology, and art.
 
-[{{ site.email }}](mailto:{{ site.email }})
+I am a cultural poet who’s purpose is to bring the just, honest, and compassionate world we all know is possible into being by helping people collaborate better with each other and themselves.
 
-<p>
-{% include social.html %}
-</p>
+* Projects
+* Offerings
+* Open Office Hours
+* My Story
 
-<small>Did I provide value to you? Leave me a tip at [Venmo (@dddrew)](https://venmo.com/dddrew) or [Paypal](https://www.paypal.me/dhornbein)</small>
+### Did I provide value to you?
+
+<a href="#pay" class="btn">Give Money</a>
+
+----
+
+## Projects
+
+{% include projects.html %}
 
 ----
 
 ## Offerings
 
-I offer consulting time to help with your technical problems. If you want to discuss how exactly I can help you, <a href="" onclick="Calendly.showPopupWidget('https://calendly.com/dddrew/talk');return false;">let's connect</a>.
+I’ve gathered many years of experience in the space between people and technology. I’m here to help.
+
+Are you
+: Struggling to understand, configure, or best use a piece of technology?
+: Looking for tools or practices to be more effective as an individual or a team?
+: Part of a team having difficulty with to many long pointless meetings or interpersonal conflict?
+: Wanting to build something amazon but don’t know where to start?
+
+Schedule my time. The first hour-long session is $50, **satisfaction guaranteed**.
+
+<a class="btn" onclick="Calendly.showPopupWidget('https://calendly.com/dddrew/talk');return false;">Schedule My Time</a> 
+
+*or email me [{{ site.email }}](mailto:{{ site.email }})*
 
 ### Free Open Office Hours
 
-I hold a few hours every week for free online open office hours.
+I offer free open office hours each week, it’s just like the above offering but it’s free!
 
-<a class="btn" onclick="Calendly.showPopupWidget('https://calendly.com/dddrew/help');return false;">Book Me Free!</a>
+<a class="btn" onclick="Calendly.showPopupWidget('https://calendly.com/dddrew/help');return false;">Book My Time!</a>
 
-<small>*Please consider buying consulting so those who need it can use my open hours*</small>
+<hr>
 
-### Online Consulting Hour $100
+## My Story
 
-You can book time on my calendar for an in-depth work meeting. I'll answer your technical questions, fix things for you, help you configure something, or just walk you through how to use a tool. Email me if you have questions: [{{ site.email }}](mailto:{{ site.email }})
-
-<a class="btn" onclick="Calendly.showPopupWidget('https://calendly.com/dddrew/consulting');return false;">Book for $100</a>
-
-### In person Consulting 2 hours $300
-
-Live in the denver area? Let's get together and work side by side. I'll help you do whatever advanced magical computer stuff you need (or help with any other kind of problem you want). Email me if you have questions: [{{ site.email }}](mailto:{{ site.email }})
-
-<a class="btn" onclick="Calendly.showPopupWidget('https://calendly.com/dddrew/work');return false;">Book for $300</a>
+I was born in the late 80's. I have been an activist and artist, lived on a commune and worked for a radical syndicate of alternative schools, I started a failed cooperative and built an association of freelancers.

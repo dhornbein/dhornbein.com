@@ -1,6 +1,11 @@
-<span class="social">
-  {% for link in site.data.social %}
-  <a href="{{ link.url }}" title="{{ link.title }}" class="social__{{ link.title | downcase }}">{{ link.label }}</a>
-  {% if forloop.last != true %} &bull; {% endif %}
-  {% endfor %}
-</span>
+<header class="header">
+  <span class="social">
+    {% for link in site.data.social %}
+    <a href="{{ link.url }}" title="{{ link.title }}" class="social__{{ link.title | downcase }}">{{ link.label }}</a>
+    {% if forloop.last != true %} &bull; {% endif %}
+    {% endfor %}
+  </span>
+  <span class="right">
+    <a href="#pay" class="btn">Give $</a>
+  </span>
+</header>

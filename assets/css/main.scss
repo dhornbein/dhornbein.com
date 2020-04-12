@@ -7,42 +7,93 @@ $color-eggplant: #331b50;
 $color-pink: #ff00c7;
 $color-yellowish: #e3acff;
 
+$color-background: #2b001e;
+$color-primary: #DB0024;
+$color-highlight: #FF3900;
+$color-bright: #FFC500;
+
+$wrapper-padding: 40px;
+
+*, *:before, *:after {box-sizing: border-box;}
+
 body {
   font-family: 'Roboto', sans-serif;
+  color: $color-primary;
 }
 h1,h2,h3 {
-  font-family: 'Nunito', sans-serif;
+  // font-family: blenny,sans-serif;
+  // font-weight: 900;
+  // font-style: normal;
+  // font-family: gothic-open-shaded, sans-serif;
+  // font-weight: 400;
+  // font-style: normal;
+  font-family: lust-display,serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 2.5rem;
-  color: $color-sky;
+  color: $color-bright;
+}
+
+h1 { font-size: 3em; }
+h2 { font-size: 2em; }
+h3 { font-size: 1.5em; }
+
+hr {
+  border-top: lighten($color-background, 25%) 1px dotted;
+  border-width: 1px 0 0 0;
+}
+
+dl {
+  color: $color-bright;
+}
+
+dt {
   font-weight: bold;
+  margin-bottom: .5em;
+}
+
+dd {
+  border-left: 4px solid;
+  margin-bottom: .5em;
+  margin-left: .5em;
+  padding-left: .5em;
 }
 
 h1:first-child { margin-top: 0; }
 p:last-child { margin-bottom: 0; }
 
 a {
-  color: $color-yellowish;
+  color: $color-bright;
   &:hover {
-    color: lighten($color-yellowish, 25%);
+    color: lighten($color-bright, 25%);
   }
 }
 
 .btn {
-  color: $color-eggplant;
-  background-color: $color-yellowish;
+  color: $color-bright;
+  background-color: $color-primary;
   padding: 0.5em;
   display: inline-block;
   border-radius: 5px;
+  text-decoration: none;
+  white-space: nowrap;
   cursor: pointer;
   &:hover {
-    color: darken($color-eggplant, 25%);
-    background-color: lighten($color-yellowish, 25%);
+    color: $color-primary;
+    background-color: $color-bright;
   }
 }
 
+.header {
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 0.8em;
+}
+
 main {
-  background-color: $color-eggplant;
-  color: $color-pink;
+  background-color: $color-background;
   font-size: 1.5rem;
   min-height: 100vh;
   line-height: 1.5;
@@ -54,33 +105,94 @@ main .page {
 }
 
 .wrapper {
-  background: $color-darksky;
-  width: 100vw;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
+  
 }
 
 .container,
 .intro {
-  padding: 40px;
-  width: 100vw;
+  padding: $wrapper-padding;
 }
 
 .headshot {
-  border-radius: 500px;
-  max-width: 300px;
-  max-height: 300px;
-  overflow: hidden;
+  background-blend-mode: luminosity;
+  background-color: $color-background;
+  background-image: url(../img/headshot.jpg);
+  background-size: contain;
+  background-position: left top;
+  background-repeat: no-repeat;
+  position: relative;
+  margin: 0;
+  width: 100%;
+  height: calc(100vw - 80px);
+  max-height: 50vh;
+}
+
+.headshot .download {
+  font-size: .75em;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
 }
 
 .headshot img {
+  display: block; 
   height: auto;
   width: 100%;
+  visibility: hidden;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  margin: 2em (-$wrapper-padding);
+
+  @media (max-width: 800px) {
+      grid-template-columns: 1fr;
+  }
+}
+
+.project-grid img {
+  max-width:100%;
+  height:auto;
+}
+
+.project {
+  background-color: $color-highlight;
+  color: $color-bright;
+  padding: 30px;
+  text-decoration: none;
+}
+
+.project .title {
+  font-family: gothic-open-shaded, sans-serif;
+  color: inherit;
+  margin: 0;
+}
+.project .desc {
+  margin-top: .5em;
+}
+
+.project:nth-child(1) {
+  grid-row-start: span 2;
+  background-color: $color-primary;
+  color: $color-background;
+}
+
+.project:nth-child(2) {
+  background-color: $color-bright;
+  color: $color-primary;
+  @media (min-width: 800px) {
+      grid-column-start: span 2;
+  }
+}
+
+.project:nth-child(3) {
+  background-color: $color-highlight;
+  color: $color-background;
+}
+
+.project:nth-child(4) {
+  background-color: $color-primary;
+  color: $color-bright;
 }
