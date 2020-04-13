@@ -35,7 +35,7 @@ Are you
 : Struggling to understand, configure, or best use a piece of technology?
 : Looking for tools or practices to be more effective as an individual or a team?
 : Part of a team having difficulty with to many long pointless meetings or interpersonal conflict?
-: Wanting to build something amazon but don’t know where to start?
+: Wanting to build something amazing but don’t know where to start?
 
 Schedule my time. The first hour-long session is $50, **satisfaction guaranteed**.
 
