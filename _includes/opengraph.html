@@ -1,6 +1,6 @@
-{% assign image = {{ site.url | append: "/assets/img/default.jpg"}} %}
+{% assign image = "/assets/img/default.jpg" %}
 <meta property="og:url" content="{{ site.url }}{{ page.url}}" />
 <meta property="og:type" content="{{ page.og.type | default: 'article' }}" />
 <meta property="og:title" content="{{ page.og.title | default: page.title }}" />
 <meta property="og:description" content="{{ page.og.description | default: page.description }}" />
-<meta property="og:image" content="{{ page.og.image | default: image }}" />
+<meta property="og:image" content="{{ site.url }}{{ page.og.image | default: image }}" />

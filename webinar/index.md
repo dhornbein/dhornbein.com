@@ -3,7 +3,7 @@ layout: webinar
 title: Now is the perfect time to grow yourself
 description: Join this free 90 minute webinar to learn 3 simple tools to improve your productivity.
 cta: 
- text: "Click here to select a webinar date:"
+ text: "Click here 👇 to select a webinar date:"
  action: <a href="" class="btn" onclick="Calendly.showPopupWidget('https://calendly.com/dddrew/productivity-webinar');return false;">Choose Webinar Date</a>
 share:
  text: <small>I require a <strong>minimum of four people on a webinar</strong>, so please share this page with your network!</small>
@@ -11,7 +11,7 @@ email: <script async data-uid="fef7142512" src="https://dhornbein.ck.page/fef714
 chat: true
 og:
  title: Free Productivity Webinar
- image:
+ image: /webinar/img/kanban.jpg
 ---
 
 Jump to: [About Drew](#about-drew) • [The Tools](#the-tools) • [Life Sector Analysis](#life-sector-analysis) • [Kanban](#kanban) • [Personal Mastery Board](#personal-mastery-board)
