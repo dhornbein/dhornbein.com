@@ -9,7 +9,7 @@ $color-yellowish: #e3acff;
 
 $color-background: #2b001e;
 $color-primary: #DB0024;
-$color-highlight: #FF3900;
+$color-highlight: #FF6A3F;
 $color-bright: #FFC500;
 
 $wrapper-padding: 40px;
@@ -43,8 +43,17 @@ hr {
   border-width: 1px 0 0 0;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 p {
   max-width: 65ch;
+}
+
+ul, ol, strong, b {
+  color: $color-highlight;
 }
 
 dl {
@@ -88,6 +97,35 @@ a {
   }
 }
 
+ul.share-buttons{
+  list-style: none;
+  padding: 0;
+  @media (max-width: 800px) {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+ul.share-buttons li{
+  display: inline;
+}
+
+ul.share-buttons .sr-only{
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.lead {
+  color: $color-bright;
+  font-size: 1.25em;
+}
+
 .header {
   display: flex;
     justify-content: space-between;
@@ -106,6 +144,41 @@ main {
 main .page {
   padding: 1rem;
   max-width: 65ch;
+}
+
+main .webinar {
+  padding: 1rem;
+
+  h1 { font-size: 2em }
+
+  img {
+    mix-blend-mode: luminosity;
+  }
+
+  @media (min-width: 800px) {
+    
+    .body {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+    }
+
+    .content {
+      flex-basis: 65ch;
+    }
+    .details {
+      margin-left: 2em;
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      height: fit-content;
+      flex: 0 1 450px;
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+  }
 }
 
 .wrapper {

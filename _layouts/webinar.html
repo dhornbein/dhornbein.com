@@ -1,0 +1,31 @@
+---
+layout: default
+---
+<div class="webinar">
+  <div class="title">
+    <h1>{{ page.title }}</h1>
+    <p class="lead">
+      {{ page.description }}
+    </p>
+    <hr>
+  </div>
+  <div class="body">
+    <aside class="details">
+      <p>
+        {{ page.cta.text}}
+      </p>
+      <p>
+        {{ page.cta.action }}
+      </p>
+      <p><small>Not ready? Give me your email and I'll keep you in the loop.</small></p>
+      
+      {{ page.email }}
+
+      {% include share.html %}
+      <p>{{ page.share.text }}</p>
+    </aside>
+    <div class="content">
+      {{ content }}
+    </div>
+  </div>
+</div>
