@@ -17,21 +17,28 @@ I am a cultural poet who’s purpose is to bring the just, honest, and compassio
 
 ### *Did I provide value to you?*
 
-<a href="#pay" class="btn">Give Money</a>
+<a href="/give" class="btn">Give Money</a>
 
 ----
 
-## Projects
+# Projects
 
 {% include projects.html %}
 
 ----
 
-## Offerings
+# Offerings
 
 I’ve gathered many years of experience in the space between people and technology. I’m here to help.
 
-Are you
+## Webinar & Pods
+
+I host a weekly free 90 minute productivity webinar, [learn more here](/webinar). This is the introduction to my facilitated pods (small group accountibility groups, like a Master Mind but more fun). Get the low down on [Pods here](/pods).
+
+## 1 on 1
+
+I provide individual consulting and coaching. Are you...
+
 : Struggling to understand, configure, or best use a piece of technology?
 : Looking for tools or practices to be more effective as an individual or a team?
 : Part of a team having difficulty with to many long pointless meetings or interpersonal conflict?
