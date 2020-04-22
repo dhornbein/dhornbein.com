@@ -11,9 +11,11 @@ layout: default
   </div>
   <div class="body">
     <aside class="details">
+      {% if page.cta.text %}
       <p>
-        {{ page.cta.text}}
+        {{ page.cta.text }}
       </p>
+      {% endif %}
       <p>
         {{ page.cta.action }}
       </p>
