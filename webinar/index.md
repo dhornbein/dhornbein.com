@@ -1,5 +1,5 @@
 ---
-layout: webinar
+layout: product
 title: Now is the perfect time to grow yourself
 description: Join this free 90 minute webinar to learn 3 simple tools to improve your productivity.
 cta: 
