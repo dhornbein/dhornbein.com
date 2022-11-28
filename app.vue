@@ -70,6 +70,11 @@ const social = [
     icon: 'discord',
     title: 'Discord'
   },
+  {
+    href: 'https://youtube.com/@dhornbein',
+    icon: 'youtube',
+    title: 'YouTube'
+  },
 
 ]
 

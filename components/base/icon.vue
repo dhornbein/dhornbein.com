@@ -61,6 +61,12 @@
         <line x1="12" y1="16" x2="12" y2="11" />
         <path d="M16 16v-3a2 2 0 0 0 -4 0" />
       </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube" width="32" height="32" v-if="icon === 'youtube'"
+        viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <rect x="3" y="5" width="18" height="14" rx="4" />
+        <path d="M10 9l5 3l-5 3z" />
+      </svg>
     </slot>
   </span>
 </template>
