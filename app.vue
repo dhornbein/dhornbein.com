@@ -42,7 +42,7 @@
 
 <script setup>
 
-const blurb = "I'm an expert collaborator. I help individuals and teams work in ways that better align with their purpose and what the world needs. I use art to translate ideas into form. I am a wildly talented facilitator and host. I use ritual and divination to touch into intuitive coaching to support change makers make really real change."
+const blurb = "I'm an expert collaborator. I help individuals and teams work in ways that better align with their purpose and what the world needs. I use art to translate ideas into form. I am a wildly talented facilitator and host. I use ritual and divination to touch into intuitive coaching. I support change makers to make really real change."
 
 const social = [
   {
@@ -75,6 +75,11 @@ const social = [
     icon: 'youtube',
     title: 'YouTube'
   },
+  {
+    href: 'https://dddrew.com',
+    icon: 'wordpress',
+    title: 'My Blog'
+  },
 
 ]
 
@@ -99,7 +104,7 @@ const quickLinks = [
 const ventures = [
   {
     img: '/hum-logo.png',
-    class: 'border-[#ff28d4] text-[#ff28d4]',
+    class: 'border-[#f25da3] text-[#f25da3] hover:text-white',
     title: 'The Hum',
     desc: 'Helping teams become self-organized and developmental',
     href: 'https://thehum.org'
@@ -113,9 +118,9 @@ const ventures = [
   },
   {
     img: '/sg-logo.png',
-    class: 'border-[#3b748a] text-[#3b748a]',
+    class: 'border-[#f6a009] text-[#f6a009] hover:text-white',
     title: 'Shared Ground',
-    desc: 'A run a climate resilience sanctuary in Denver',
+    desc: 'I was the former founder of a climate resiliency sanctuary in Denver',
     href: 'https://sharedground.co'
   }
 ]
