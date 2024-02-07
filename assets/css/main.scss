@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-slate-900 text-amber-100 p-4 min-h-screen;
+}
+
+a {
+  @apply text-rose-400 hover:text-rose-600;
+}
+
+.btn,
+.btn:link {
+  @apply inline-flex items-center gap-2 border-rose-400 border text-rose-400 font-bold py-2 px-4 rounded bg-slate-800/80 hover:text-white hover:bg-rose-400;
+}
