@@ -40,7 +40,7 @@
               <img :src="item.src" :alt="item.caption" class="w-full h-full object-cover" />
             </div>
             <div v-else :class="`flex flex-col items-center ${item.class}`">
-              <p class="text-justify">{{ item.content }}</p>
+              <p class="text-justify max-w-prose mx-auto">{{ item.content }}</p>
               <div v-if="item.links" class="mt-4 flex flex-wrap items-start w-full gap-2">
                 <a v-for="(link, linkIndex) in item.links" :key="linkIndex" 
                    :href="link.url" 
@@ -276,7 +276,7 @@ const portfolioProjects = [
         type: 'image',
         src: '/portfolio/bbp-page-spread-80.jpg',
         caption: 'Ballots Building Power Page Spread',
-        class: 'md:col-span-2'
+        class: 'md:col-span-2 md:col-start-2'
       }
     ]
   }
