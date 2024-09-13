@@ -21,6 +21,15 @@
     <section class="my-6 md:hidden">
       <p class="text-lg max-w-prose">{{ blurb }}</p>
     </section>
+    <section class="flex flex-wrap items-center justify-center space-around border-b border-t border-slate-600 py-4 text-white">
+      <a href="https://ritualpoint.studio/?utm_source=dhornbein.com" class="p-4">
+        <img src="/rp-logo.png" alt="Ritual Point Logo" class="max-h-[200px] w-auto">
+      </a>
+      <a href="https://ritualpoint.studio/?utm_source=dhornbein.com" class="text-white">
+        <h2 class="title text-3xl mb-4">Ritual Point Studio<br>Art &amp; Divination</h2>
+        <p>Visit my artist persona where you can learn about my work with Tarot and Tattoos</p>
+      </a>
+    </section>
     <section id="portfolio" class="portfolio-section mt-8">
       <h2 id="portfolio" class="title text-6xl mb-4">Portfolio</h2>
       <div v-for="project in portfolioProjects" :key="project.id" :id="project.id" class="project-section mb-8">
