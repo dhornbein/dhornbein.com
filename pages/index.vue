@@ -21,18 +21,6 @@
     <section class="my-6 md:hidden">
       <p class="text-lg max-w-prose">{{ blurb }}</p>
     </section>
-    <section>
-      <h2 class="text-2xl my-8">My ventures</h2>
-      <div class="ventures">
-        <a v-for="(venture, idx) in ventures" :key="idx" :href="venture.href" class="venture" :class="venture.class">
-          <picture>
-            <img :src="venture.img" class="w-24" />
-          </picture>
-          <h3 class="title">{{ venture.title }}</h3>
-          <p>{{ venture.desc }}</p>
-        </a>
-      </div>
-    </section>
     <section id="portfolio" class="portfolio-section mt-8">
       <h2 id="portfolio" class="title text-6xl mb-4">Portfolio</h2>
       <div v-for="project in portfolioProjects" :key="project.id" :id="project.id" class="project-section mb-8">
@@ -309,30 +297,6 @@ const quickLinks = [
     href: 'tel:7732703739'
   }
 ]
-
-const ventures = [
-  {
-    img: '/hum-logo.png',
-    class: 'border-[#f25da3] text-[#f25da3] hover:text-white',
-    title: 'The Hum',
-    desc: 'Helping teams become self-organized and developmental',
-    href: 'https://thehum.org'
-  },
-  {
-    img: '/rp-logo.png',
-    class: 'border-white text-white',
-    title: 'Ritual Point',
-    desc: 'My art and divination practice',
-    href: 'https://ritualpoint.studio/'
-  },
-  {
-    img: '/sg-logo.png',
-    class: 'border-[#f6a009] text-[#f6a009] hover:text-white',
-    title: 'Shared Ground',
-    desc: 'I was the former founder of a climate resiliency sanctuary in Denver',
-    href: 'https://sharedground.co'
-  }
-]
 </script>
 
 <style lang="scss">
@@ -349,18 +313,4 @@ const ventures = [
   }
 }
 
-.ventures {
-  @apply flex flex-col sm:flex-row gap-4;
-
-  .venture {
-    @apply border rounded-md p-4 flex flex-wrap gap-2 items-center md:w-1/3;
-
-    .title {
-      @apply text-2xl font-bold;
-    }
-
-    p {
-      @apply w-full text-sm;
-    }
-  }
-}</style>
+</style>
