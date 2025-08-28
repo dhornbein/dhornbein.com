@@ -1,8 +1,8 @@
 <template>
-   <nav>
+   <nav class="main-nav">
       <div class="flex gap-2 items-center">
         <div v-if="route.name != 'index'" class="border-r pr-4 mr-2 border-pink-500">
-          <nuxt-link to="/"><BaseIcon icon="home" /> Go Home</nuxt-link>
+          <nuxt-link to="/"><BaseIcon icon="home" /> <span class="hidden sm:inline">Go Home</span></nuxt-link>
         </div>
         <a v-for="(link, idx) in social" :key="idx" :href="link.href" target="_blank">
           <BaseIcon :icon="link.icon" v-if="link.icon" />
@@ -28,21 +28,21 @@ const social = [
     icon: 'instagram',
     title: 'Instagram'
   },
-  {
-    href: 'https://facebook.com/dhornbein',
-    icon: 'facebook',
-    title: 'Facebook'
-  },
+  // {
+  //   href: 'https://facebook.com/dhornbein',
+  //   icon: 'facebook',
+  //   title: 'Facebook'
+  // },
   {
     href: 'https://www.linkedin.com/in/dddrew/',
     icon: 'linkedin',
     title: 'LinkedIn'
   },
-  {
-    href: 'https://www.discordapp.com/users/DHorn#1231',
-    icon: 'discord',
-    title: 'Discord'
-  },
+  // {
+  //   href: 'https://www.discordapp.com/users/DHorn#1231',
+  //   icon: 'discord',
+  //   title: 'Discord'
+  // },
   {
     href: 'https://youtube.com/@dhornbein',
     icon: 'youtube',
