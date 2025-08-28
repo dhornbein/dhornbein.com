@@ -5,14 +5,18 @@
       <header class="text-center">
         <h1>Drew Hornbein</h1>
         <p><strong>Web Developer • Designer • Systems Thinker</strong></p>
-        <p class="flex items-center justify-center gap-1 flex-wrap screen:mt-4">
-          <BaseIcon icon="mail" /> drew@dhornbein.com &bull;
-          <BaseIcon icon="phone" /> +1 (773) 270-3739
+        <p class="flex items-center justify-center gap-3 flex-wrap mt-4 print:mt-0">
+          <span class="text-nowrap flex items-center gap-1">
+            <BaseIcon icon="mail" /> drew@dhornbein.com
+          </span>
+          <span class="text-nowrap flex items-center gap-1">
+            <BaseIcon icon="phone" /> +1 (773) 270-3739
+          </span>
         </p>
         <div class="quick-links flex flex-col gap-4 mt-4 max-w-[520px] mx-auto print:hidden">
           <div class="flex gap-2 flex-wrap justify-center">
             <a class="btn" href="mailto:drew@dhornbein.com"><BaseIcon icon="mail" /> Email Me</a>
-            <a class="btn" href="sms:+17732703739"><BaseIcon icon="phone" /> Text Me</a>
+            <a class="btn" href="tel:+17732703739"><BaseIcon icon="phone" /> Call Me</a>
           </div>
         </div>
       </header>
