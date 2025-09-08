@@ -60,11 +60,12 @@
 
 <script setup>
 definePageMeta({
-  alias: ['/wizard','/resumee'],
+  alias: ['/resumee'],
 })
 
 // Define page metadata and open graph
 useHead({
+  htmlAttrs: { class: 'scroll-smooth' },
   title: 'Drew Hornbein - Resume | Web Developer & Designer',
   meta: [
     {
