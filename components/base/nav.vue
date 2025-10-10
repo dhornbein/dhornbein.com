@@ -2,15 +2,15 @@
    <nav class="main-nav">
       <div class="flex gap-2 items-center">
         <div v-if="route.name != 'index'" class="border-r pr-4 mr-2 border-pink-500">
-          <nuxt-link to="/"><BaseIcon icon="home" /> <span class="hidden sm:inline">Go Home</span></nuxt-link>
+          <nuxt-link to="/"><Icon name="heroicons:home" /> <span class="hidden sm:inline">Go Home</span></nuxt-link>
         </div>
         <a v-for="(link, idx) in social" :key="idx" :href="link.href" target="_blank">
-          <BaseIcon :icon="link.icon" v-if="link.icon" />
+          <Icon :name="link.icon" v-if="link.icon" />
         </a>
       </div>
       <div class="flex gap-4 item-center">
-        <a href="mailto:hello@dhornbein.com"><BaseIcon icon="mail" /> <span class="hidden sm:inline">hello@dhornbein.com</span></a>
-        <a href="tel:+17732703739"><BaseIcon icon="phone" /> <span class="hidden sm:inline">+1 (773) 270-3739</span></a>
+        <a href="mailto:hello@dhornbein.com"><Icon name="heroicons:envelope-solid" /> <span class="hidden sm:inline">hello@dhornbein.com</span></a>
+        <a href="tel:+17732703739"><Icon name="heroicons:phone-solid" /> <span class="hidden sm:inline">+1 (773) 270-3739</span></a>
       </div>
     </nav> 
 </template>
@@ -20,37 +20,37 @@ const route = useRoute();
 const social = [
   {
     href: 'https://twitter.com/dhornbein',
-    icon: 'twitter',
+    icon: 'cib:twitter',
     title: 'Twitter'
   },
   {
     href: 'https://instagram.com/dhornbein',
-    icon: 'instagram',
+    icon: 'cib:instagram',
     title: 'Instagram'
   },
   // {
   //   href: 'https://facebook.com/dhornbein',
-  //   icon: 'facebook',
+  //   icon: 'cib:facebook',
   //   title: 'Facebook'
   // },
   {
     href: 'https://www.linkedin.com/in/dddrew/',
-    icon: 'linkedin',
+    icon: 'cib:linkedin',
     title: 'LinkedIn'
   },
   // {
   //   href: 'https://www.discordapp.com/users/DHorn#1231',
-  //   icon: 'discord',
+  //   icon: 'cib:discord',
   //   title: 'Discord'
   // },
   {
     href: 'https://youtube.com/@dhornbein',
-    icon: 'youtube',
+    icon: 'cib:youtube',
     title: 'YouTube'
   },
   {
     href: 'https://dddrew.com',
-    icon: 'wordpress',
+    icon: 'cib:wordpress',
     title: 'My Blog'
   },
 

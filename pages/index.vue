@@ -7,15 +7,25 @@
         <h1 class="text-3xl md:text-6xl">Drew Hornbein</h1>
         <p class="text-lg mt-4 max-w-prose w-[50vw] hidden md:block">{{ blurb }}</p>
       </div>
-      <div class="quick-links flex flex-col gap-4 max-w-[440px]">
-        <div v-for="(link, idx) in quickLinks" :key="idx" class="flex gap-2 flex-wrap">
-          <a :href="link.href" class="btn grow">
-            <BaseIcon :icon="link.icon" v-if="link.icon" /> {{ link.title }}
-          </a>
-          <nuxt-link v-if="link.twin" :to="link.twin.href" class="btn grow">
-            <BaseIcon :icon="link.twin.icon" v-if="link.twin.icon" /> {{ link.twin.title }}
+      <div class="quick-links grid grid-cols-2 gap-4 max-w-[440px]">
+        <template v-for="(btn, idx) in buttons" :key="idx">
+          <nuxt-link
+            v-if="btn.isNuxt"
+            :to="btn.href"
+            class="btn"
+            :class="btn.btnClass"
+          >
+            <Icon :name="btn.icon" size="1.5em" v-if="btn.icon" /> {{ btn.title }}
           </nuxt-link>
-        </div>
+          <a
+            v-else
+            :href="btn.href"
+            class="btn"
+            :class="btn.btnClass"
+          >
+            <Icon :name="btn.icon" size="1.5em" v-if="btn.icon" /> {{ btn.title }}
+          </a>
+        </template>
       </div>
     </section>
     <section class="my-6 md:hidden">
@@ -38,38 +48,45 @@
 
 const blurb = "I'm an expert collaborator who helps individuals and teams work in ways that better align with their purpose and what the world needs. I use art, divination, and facilitation to support change makers in their efforts to make real and lasting change."
 
-const quickLinks = [
+const buttons = [
   {
-    icon: 'calendar',
+    icon: 'heroicons:calendar',
     title: 'Book a Meeting',
     href: 'https://cal.com/dhornbein',
-    twin: {
-      icon: 'calendar-month',
-      title: 'See Calendar',
-      href: '/calendar'
-    }
+    isNuxt: false,
+    btnClass: 'btn-gold'
   },
   {
-    icon: 'mail',
+    icon: 'heroicons:calendar-days',
+    title: 'See Calendar',
+    href: '/calendar',
+    isNuxt: true,
+  },
+  {
+    icon: 'heroicons:envelope',
     title: 'Email Me',
     href: 'mailto:hello@dhornbein.com',
-    twin: {
-      icon: 'phone',
-      title: 'Call Me',
-      href: 'tel:7732703739'
-    }
+    isNuxt: false,
   },
   {
-    icon: 'file',
+    icon: 'heroicons:phone',
+    title: 'Call Me',
+    href: 'tel:7732703739',
+    isNuxt: false,
+  },
+  {
+    icon: 'heroicons:document-text',
     title: 'Resume',
     href: '/resume',
-    twin: {
-      icon: 'users',
-      title: 'Facilitation',
-      href: '/facilitation'
-    }
-  }
-]
+    isNuxt: true,
+  },
+  {
+    icon: 'heroicons:user-group-solid',
+    title: 'Facilitation',
+    href: '/facilitation',
+    isNuxt: true,
+  },
+];
 </script>
 
 <style lang="scss">

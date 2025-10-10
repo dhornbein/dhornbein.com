@@ -7,16 +7,16 @@
         <p><strong>Web Developer • Designer • Systems Thinker</strong></p>
         <p class="flex items-center justify-center gap-3 flex-wrap mt-4 print:mt-0">
           <span class="text-nowrap flex items-center gap-1">
-            <BaseIcon icon="mail" /> drew@dhornbein.com
+            <Icon name="heroicons:envelope" /> drew@dhornbein.com
           </span>
           <span class="text-nowrap flex items-center gap-1">
-            <BaseIcon icon="phone" /> +1 (773) 270-3739
+            <Icon name="heroicons:phone" /> +1 (773) 270-3739
           </span>
         </p>
         <div class="quick-links flex flex-col gap-4 mt-4 max-w-[520px] mx-auto print:hidden">
           <div class="flex gap-2 flex-wrap justify-center">
-            <a class="btn" href="mailto:drew@dhornbein.com"><BaseIcon icon="mail" /> Email Me</a>
-            <a class="btn" href="tel:+17732703739"><BaseIcon icon="phone" /> Call Me</a>
+            <a class="btn" href="mailto:drew@dhornbein.com"><Icon name="heroicons:envelope-solid" /> Email Me</a>
+            <a class="btn" href="tel:+17732703739"><Icon name="heroicons:phone-solid" /> Call Me</a>
           </div>
         </div>
       </header>
@@ -69,12 +69,19 @@
           <li v-for="item in collaboration" :key="item">{{ item }}</li>
         </ul>
       </section>
+      <section class="print:hidden">
+        <h2 data-emoji="🗣">Facilitation</h2>
+        <p class="mb-4 max-w-prose">
+          I am a skilled facilitator, experienced in guiding groups through collaborative processes and decision-making. 
+        </p>
+        <NuxtLink to="/facilitator" class="btn btn-gold">Learn more &rarr;</NuxtLink>
+      </section>
     </div>
   </div>
   <div class="quick-links flex flex-col gap-4 mt-4 max-w-[520px] mx-auto print:hidden">
     <div class="flex gap-2 flex-wrap justify-center">
-      <a class="btn" href="mailto:drew@dhornbein.com"><BaseIcon icon="mail" /> Email Me</a>
-      <a class="btn" href="tel:+17732703739"><BaseIcon icon="phone" /> Call Me</a>
+      <a class="btn" href="mailto:drew@dhornbein.com"><Icon name="heroicons:envelope-solid" /> Email Me</a>
+      <a class="btn" href="tel:+17732703739"><Icon name="heroicons:phone-solid" /> Call Me</a>
     </div>
   </div>
   <Portfolio id="portfolio" class="print:hidden max-w-screen-lg mx-auto" />

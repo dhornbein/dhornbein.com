@@ -17,7 +17,7 @@
       </div>
 
       <div class="mt-6 flex gap-3 flex-wrap">
-        <a class="btn" href="https://cal.com/dhornbein/take?duration=30" target="_blank" rel="noopener">Book a 30-minute consult</a>
+        <a class="btn" href="https://cal.com/dhornbein/take?duration=30" target="_blank" rel="noopener"><Icon name="heroicons:calendar" /> Book a 30-minute consult</a>
       </div>
     </section>
 
@@ -34,13 +34,13 @@
 
       <section>
         <h2 data-emoji="🧭">How I help</h2>
-        <p class="max-w-prose">I support groups across four related needs — strategy, tactics, reflection, and relational work. That can look like leading a multi-day retreat to align a leadership team, running short design sprints that surface clear next steps, facilitating retrospectives that teach teams to learn, or building rituals that create safety and cohesion.</p>
+  <p class="max-w-prose">I support groups across four related needs — strategy, tactics, reflection, and relational work. That can look like leading multi-day retreats to align leadership teams, running short design sprints to surface clear next steps, facilitating retrospectives to foster learning, or building rituals to create safety and cohesion.</p>
 
         <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
           <li class="p-4 rounded border border-slate-700">
             <h3 class="mb-2">🎯 Strategy</h3>
             <p class="mb-2">Finding alignment and shared vision.</p>
-            <p class="text-amber-300">Retreat design, offsites, alignment sessions, and shared roadmaps.</p>
+      <p class="text-amber-300">Retreat design, retreats, alignment sessions, and shared roadmaps.</p>
           </li>
           <li class="p-4 rounded border border-slate-700">
             <h3 class="mb-2">⚙️ Tactical</h3>
@@ -50,7 +50,7 @@
           <li class="p-4 rounded border border-slate-700">
             <h3 class="mb-2">🔁 Reflection</h3>
             <p class="mb-2">Learning from the past to improve future practices.</p>
-            <p class="text-amber-300">Retrospectives, pause practices, and learning rhythms that help teams get better.</p>
+            <p class="text-amber-300">Retrospectives, pause practices, and learning rhythms that help teams improve.</p>
           </li>
           <li class="p-4 rounded border border-slate-700">
             <h3 class="mb-2">🤝 Relational</h3>
@@ -67,7 +67,7 @@
 
       <section>
         <h2 data-emoji="🌱">Approach</h2>
-        <p class="max-w-prose">My methods are hybrid and practical. I draw inspiration from social permaculture, Art of Hosting, prefigurative activist facilitation, as well as group rituals and rhythms. I am comfortable moving between the rational and the magical — stand-ups and sprints alongside intentional opening, interpersonal relating, and closing practices. I keep things simple: build trust, feel safe, and bring people's intelligence together.</p>
+  <p class="max-w-prose">My methods are hybrid and practical. I draw inspiration from social permaculture, Art of Hosting, prefigurative activist facilitation, as well as group rituals and rhythms. I am comfortable moving between the rational and the magical— facilitating stand-ups and sprints alongside intentional openings, interpersonal relating, and closing practices. I keep things simple: build trust, feel safe, and bring people's intelligence together.</p>
       </section>
 
       <section>
@@ -99,9 +99,9 @@
       <section class="py-6">
         <h2 data-emoji="🤝">Ready to talk?</h2>
         <p class="max-w-prose">If you're planning a retreat, need a facilitated offsite, or want to build stronger ways of working together, let's talk. I offer a short 30-minute consult to explore fit and outcomes.</p>
-        <div class="mt-4">
-          <a class="btn" href="https://cal.com/dhornbein/take?duration=30" target="_blank" rel="noopener">Schedule 30-minute consult</a>
-        </div>
+          <div class="mt-4">
+            <a class="btn" href="https://cal.com/dhornbein/take?duration=30" target="_blank" rel="noopener"><Icon name="heroicons:calendar" /> Book 30-minute consult</a>
+          </div>
       </section>
 
       <div class="w-full flex justify-center my-8" aria-hidden="true">
@@ -123,10 +123,10 @@
       <section>
         <h2 data-emoji="💻">Technology, design & web development</h2>
         <p class="max-w-prose">
-          Beyond facilitation, I help teams harness technology and design to automate processes, improve collaboration, and communicate more effectively. See more about my hard skills and experience on my resume.
+          Beyond facilitation, I help teams harness technology and design to automate processes, improve collaboration, and communicate more effectively. See more about my skills and experience on my resume.
         </p>
         <div class="mt-4">
-          <NuxtLink class="btn btn-gold" to="/resume">View my resume</NuxtLink>
+          <NuxtLink class="btn btn-gold" to="/resume"><Icon name="heroicons:document-text" />View my resume</NuxtLink>
         </div>
       </section>
     </div>

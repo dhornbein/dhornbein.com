@@ -1,8 +1,14 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['@nuxtjs/tailwindcss'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxt/icon'],
   tailwindcss: {
     cssPath: '~/assets/css/main.scss',
+  },
+  icon: {
+    size: '1.5em', // sets the default size of icons
+    serverBundle: {
+      collections: ['heroicons', 'cib'] // add more as needed
+    }
   },
   app: {
     head: {
