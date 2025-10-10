@@ -25,7 +25,7 @@
       <a href="https://ritualpoint.studio/?utm_source=dhornbein.com" class="p-4">
         <img src="/rp-logo.png" alt="Ritual Point Logo" class="max-h-[200px] w-auto">
       </a>
-      <a href="https://ritualpoint.studio/?utm_source=dhornbein.com" class="text-white">
+      <a href="https://ritualpoint.studio/?utm_source=dhornbein.com" class="text-white text-center md:text-left">
         <h2 class="title text-3xl mb-4">Ritual Point Studio<br>Art &amp; Divination</h2>
         <p>Visit my artist persona where you can learn about my work with Tarot and Tattoos</p>
       </a>
@@ -36,7 +36,7 @@
 
 <script setup>
 
-const blurb = "I'm an expert collaborator. I help individuals and teams work in ways that better align with their purpose and what the world needs. I use art to translate ideas into form. I am a wildly talented facilitator and host. I use ritual and divination to touch into intuitive coaching. I support change makers to make really real change."
+const blurb = "I'm an expert collaborator who helps individuals and teams work in ways that better align with their purpose and what the world needs. I use art, divination, and facilitation to support change makers in their efforts to make real and lasting change."
 
 const quickLinks = [
   {
@@ -62,7 +62,12 @@ const quickLinks = [
   {
     icon: 'file',
     title: 'Resume',
-    href: '/resume'
+    href: '/resume',
+    twin: {
+      icon: 'users',
+      title: 'Facilitation',
+      href: '/facilitation'
+    }
   }
 ]
 </script>

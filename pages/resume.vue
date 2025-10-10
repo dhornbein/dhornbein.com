@@ -53,6 +53,13 @@
           <li v-for="item in collaboration" :key="item">{{ item }}</li>
         </ul>
       </section>
+      <section class="print:hidden">
+        <h2 data-emoji="🗣">Facilitation</h2>
+        <p class="mb-4 max-w-prose">
+          I am a skilled facilitator, experienced in guiding groups through collaborative processes and decision-making. 
+        </p>
+        <NuxtLink to="/facilitator" class="btn btn-gold">Learn more &rarr;</NuxtLink>
+      </section>
     </div>
   </div>
   <Portfolio id="portfolio" class="print:hidden" />
