@@ -15,6 +15,7 @@ This file is intentionally minimal. It records the project's strict conventions 
 - Prefer named exports to default exports.
 - Nuxt auto-imports components, composables, utilities, and Vue/Nuxt APIs — do not manually import them.
 - Use NuxtLink for internal links.
+- Use Yarn package manager.
 
 If a proposed change would violate any of these, refuse and offer a compliant alternative.
 
