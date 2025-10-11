@@ -13,7 +13,7 @@ This file is intentionally minimal. It records the project's strict conventions 
 - Add only meaningful comments that explain why something is done (not what it does).
 - Use named functions for methods; arrow functions only for callbacks.
 - Prefer named exports to default exports.
-- Nuxt auto-imports components, composables, utilities, and Vue/Nuxt APIs — do not manually import them.
+- Nuxt auto-imports components, composables, utilities, and Vue/Nuxt APIs (e.g., `ref`, `computed`, `onMounted`) — do not manually import them anywhere in the project.
 - Use NuxtLink for internal links.
 - Use Yarn package manager.
 
